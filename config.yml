@@ -1,0 +1,8 @@
+# example configuration file
+JAVAPATH: 'PATH_TO_JAVA'
+GATKPATH: 'PATH_TO_GATK.jar'
+referencePath: 'PATH_TO_REFERENCE.fa'
+exomeBedPath: 'PATH_TO_EXOME_CAPTURE.bed'
+outputDIR: 'PATH_TO_OUTPUTDIR'
+normalBamPaths: 'PATH_TO_WXS_NORMAL_BAM_PATH.txt'
+cancerBamPaths: 'PATH_TO_WXS_CANCER_BAM_PATH.txt'
