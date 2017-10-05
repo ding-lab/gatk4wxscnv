@@ -1,6 +1,6 @@
 # example configuration file
-JAVAPATH: 'PATH_TO_JAVA'
-GATKPATH: 'PATH_TO_GATK.jar'
+JAVAPATH: '/usr/bin/java'
+GATKPATH: '/home/software/gatk-4.beta.5/gatk-package-4.beta.5-local.jar'
 referencePath: 'PATH_TO_REFERENCE.fa'
 exomeBedPath: 'PATH_TO_EXOME_CAPTURE.bed'
 outputDIR: 'PATH_TO_OUTPUTDIR'
