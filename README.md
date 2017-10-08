@@ -2,11 +2,11 @@
 Pipeline for WXS CNV using GATK4, based on https://gatkforums.broadinstitute.org/gatk/discussion/9143/how-to-call-somatic-copy-number-variants-using-gatk4-cnv
 
 ## Requirements
--Python3.6
--R and packages(`naturalsort`, `getopt`, `optparse`, `DNAcopy`)
--Java1.8
--GATK4
--Bedtools2
+- Python3.6
+- R and packages(`naturalsort`, `getopt`, `optparse`, `DNAcopy`)
+- Java1.8
+- GATK4
+- Bedtools2
 
 ## Simple run
 ```bash
@@ -34,6 +34,7 @@ $ less normalBamPaths.txt
 ...
 ```
 
+Output files will take the `@RG SM:` (sample name from read group) from the BAM header to infer the sample name. If such tag is missing in the BAM file, will need to either reheader the BAM file or modify this script. 
 
 ## Docker version
 ```bash
