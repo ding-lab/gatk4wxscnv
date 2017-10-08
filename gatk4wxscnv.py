@@ -84,7 +84,7 @@ def convertBedToTargetFile(exomeMergedBedPath, JAVAPATH, GATKPATH):
 def configure(configPath):
     '''configures the path to softwares and input files from a yaml file'''
     with open(configPath, 'r') as f:
-        pathMaps = yaml.safeload(f)
+        pathMaps = yaml.safe_load(f)
 
     try:
         JAVAPATH = pathMaps['JAVAPATH']
