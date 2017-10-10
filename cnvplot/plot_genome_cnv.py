@@ -3,7 +3,6 @@ import argparse
 from os.path import basename, splitext
 
 import HTSeq
-import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
