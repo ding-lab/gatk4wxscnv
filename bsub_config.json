@@ -1,0 +1,7 @@
+{
+    "__default__": {
+        "queue": "research-hpc",
+        "docker_image": "lbwang/dailybox",
+        "job_group": "/lwang/gatk4_wxs_cnv"
+    }
+}
