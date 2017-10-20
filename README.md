@@ -42,3 +42,15 @@ docker build -t gatk4wxscnv .
 docker run -it gatk4wxscnv
 ```
 
+## Snakemake 
+To run snakemake on local machines, simply run `snakemake -j 8 quant_all_samples`.
+
+To run it using MGI's LSF (bsub),
+
+```bash
+snakemake --timestamp --rerun-incomplete --nolock \
+    --jobs 1000 \
+    --cluster "./cluster-submitter.py {dependencies} lsf_logs" \
+    --cluster-config bsub_config.json \
+    quant_all_samples
+```
